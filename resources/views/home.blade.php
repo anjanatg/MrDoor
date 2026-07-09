@@ -13,6 +13,7 @@
 								<p><a href="" class="btn btn-secondary me-2">Enquire Now</a></p>
 							</div>
 						</div>
+						
 						<div class="col-lg-4">
 							<div class="hero-img-wrap">
 								<img src="assets/images/SolidWoodDoor.webp" class="img-fluid" width="285">
@@ -24,7 +25,7 @@
 		<!-- End Hero Section -->
 
 		<!-- Start Product Section -->
-		<div class="product-section">
+		<div class="product-section" id="types-of-door">
 			<div class="container">
                 <h1 class="text-center">Type of Doors</h1><br><br>
 				<div class="row">
@@ -92,11 +93,11 @@
 		<!-- End Product Section -->
 
 		<!-- Start Why Choose Us Section -->
-		<div class="why-choose-section">
-			<div class="container">
+		<div class="why-choose-section" id="Company-profile">
+			<div class="container-fluid">
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
-						<h2 class="section-title">Company Profile</h2>
+						<h1 class="section-title text-center">Company Profile</h1>
 						<p class="text-center fs-6">We. Mr.door, are a premier and well-known manufacturers and dealers of doors and have a strong base at Palai, Kottayam, Kerala.
                             Our company's versatile product range comprises of various doors like panel, windowed. sliding, storm, pocket, bypass and more. 
                             Our products are considerably premium over other products because of the fine glossy shine that no other manufacturer can provide and because of our packaging, we have gained large client base for our establishment.
@@ -125,76 +126,17 @@
 		<!-- End Why Choose Us Section -->
 
 		<!-- Start We Help Section -->
-		<div class="container my-5">
-    <div class="card shadow-sm" style="width: 450px;">
-        <div class="row g-0 align-items-center">
-
-            <!-- Left -->
-            <div class="col-5 d-flex justify-content-center align-items-center">
-                <h5 class="fw-bold mb-0">Products</h5>
-            </div>
-
-            <!-- Right -->
-            <div class="col-7 text-center">
-                <img src="{{ asset('assets/images/SolidWoodDoor.webp') }}"
-                     class="img-fluid p-2"
-                     style="max-height: 180px;"
-                     alt="Solid Wood Door">
-            </div>
-
-        </div>
-    </div>
-</div>
-		<!-- End We Help Section -->
-
-		<!-- Start Popular Product -->
-		<div class="popular-product">
+		<div class="we-help-section" id="products">
 			<div class="container">
-				<div class="row">
-
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="assets/images/product-1.png" alt="Image" class="img-fluid">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<h2>Products</h2><br>
+						<div class="img">
+							<div ><img src="/assets/images/SolidWoodDoor.webp" alt="Untree.co" width="200"></div>
 							</div>
-							<div class="pt-3">
-								<h3>Nordic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
-						</div>
 					</div>
 
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="assets/images/product-2.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Kruzo Aero Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="assets/images/product-3.png" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Ergonomic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- End Popular Product -->
+		<!-- End We Help Section -->
 
 		<!-- Start Testimonial Slider -->
 		<div class="testimonial-section">
@@ -286,76 +228,63 @@
 		<!-- End Testimonial Slider -->
 
 		<!-- Start Blog Section -->
-		<div class="blog-section">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md-6">
-						<h2 class="section-title">Gallary</h2>
-					</div>
-					<div class="col-md-6 text-start text-md-end">
-						<a href="#" class="more">View All Posts</a>
-					</div>
-				</div>
+		<section class="gallery-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">
+            Masonry Image Gallery with Lightbox
+        </h2>
 
-				<div class="row">
+        <div class="gallery-grid">
 
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
+            <div class="gallery-item item1">
+                <img src="{{ asset('assets/images/gallery1.webp') }}" alt="">
+            </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery1.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
+            <div class="gallery-item item2">
+                <img src="{{ asset('assets/images/gallery2.webp') }}" alt="">
+            </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery3.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery4.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery5.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-4">
-                        <div class="post-entry">
-                            <a href="#" class="post-thumbnail">
-                                <img src="{{ asset('assets/images/gallery6.webp') }}"
-                                     class="gallery-img"
-                                     alt="Gallery">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-			</div>
-		</div>
+            <div class="gallery-item item3">
+                <img src="{{ asset('assets/images/gallery3.webp') }}" alt="">
+            </div>
+
+            <div class="gallery-item item4">
+                <img src="{{ asset('assets/images/gallery4.webp') }}" alt="">
+            </div>
+
+            <div class="gallery-item item5">
+                <img src="{{ asset('assets/images/gallery5.webp') }}" alt="">
+            </div>
+
+            <div class="gallery-item item6">
+                <img src="{{ asset('assets/images/gallery6.webp') }}" alt="">
+            </div>
+
+            <div class="gallery-item item7">
+                <img src="{{ asset('assets/images/gallery7.webp') }}" alt="">
+            </div>
+
+            <div class="gallery-item item8">
+                <img src="{{ asset('assets/images/gallery8.webp') }}" alt="">
+            </div>
+			<div class="gallery-item item9">
+                <img src="{{ asset('assets/images/gallery.webp') }}" alt="">
+            </div>
+			<div class="gallery-item item10">
+                <img src="{{ asset('assets/images/gallery9.webp') }}" alt="">
+            </div>
+			<div class="gallery-item item11">
+                <img src="{{ asset('assets/images/gallery10.webp') }}" alt="">
+            </div>
+			<div class="gallery-item item12">
+                <img src="{{ asset('assets/images/gallery11.webp') }}" alt="">
+            </div>
+			<div class="gallery-item item13">
+                <img src="{{ asset('assets/images/gallery12.webp') }}" alt="">
+            </div>
+
+        </div>
+    </div><br><br>
+</section>
+		
 @endsection
