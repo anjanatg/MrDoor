@@ -213,6 +213,9 @@ a {
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease; }
+    .product-section h1 {
+      color: #8a6d1f;
+    }  
     .product-section .product-item h3 {
       font-weight: 600;
       font-size: 16px; }
@@ -274,6 +277,7 @@ a {
   .why-choose-section .img-wrap {
     position: relative; }
     .why-choose-section .img-wrap:before {
+      margin-top: 20%;
       position: absolute;
       content: "";
       width: 255px;
@@ -287,7 +291,7 @@ a {
       z-index: -1; }
     .why-choose-section .img-wrap img {
       border-radius: 20px; 
-      margin-top: 10%; }
+      margin-top: 30%; }
 
 .feature {
   margin-bottom: 30px; }
@@ -727,7 +731,18 @@ textarea {
     text-decoration: none;
     font-size: 15px;
 }
+.gallery-section {
+    background: white;
+    margin-top: 90px;
+    margin-bottom: 200px;
+    padding-top: 3%;
+}
+.gallery-section h1 {
+    color: #8a6d1f;
+}
 .gallery-grid{
+    padding-top: 1%;
+    padding-bottom: 7%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
@@ -880,4 +895,330 @@ textarea {
     .gallery-grid{
         grid-template-columns: 1fr;
     }
+}
+ .slider-wrap {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    background: #111;
+    display: flex;
+    justify-content: center;
+  }
+  .bg-layer {
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 130%;
+    height: 100%;
+    background-image: url('../images/SolidWoodDoor.webp'); /* replace with your black & white door photo */
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) contrast(1.1) brightness(0.55);
+    transition: transform 0.6s ease;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(94, 92, 92, 0.5), rgba(56, 55, 55, 0.75));
+  }
+  .track {
+    position: relative;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  .slide p.quote {
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .slide p.author {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+  }
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .nav-btn:hover { background: rgba(255,255,255,0.22); }
+  #prevBtn { left: 14px; }
+  #nextBtn { right: 14px; }
+  .dots {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  /* ===== Company Profile Section - Professional Style ===== */
+
+.profile-section {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 40px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+ 
+}
+
+/* Header */
+.profile-header {
+  padding: 56px 48px 40px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.mrdoor-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a6d1f;
+  margin: 0 0 10px !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.profile-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #16213a;
+  margin: 0 0 18px;
+}
+
+.profile-header p {
+  max-width: 840px;
+  margin: 0 auto;
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #5a6270;
+}
+
+/* Stats row */
+.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 36px 48px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-stats .stat {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+  padding: 12px;
+  border-right: 1px solid #eee;
+}
+
+.profile-stats .stat:last-child {
+  border-right: none;
+}
+
+.profile-stats .stat .num {
+  font-size: 26px;
+  font-weight: 800;
+  color: #16213a;
+  margin: 0;
+}
+
+.profile-stats .stat .label {
+  font-size: 12.5px;
+  color: #8a8f99;
+  margin: 4px 0 0;
+}
+
+/* Content row: feature list + image */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 44px 48px;
+  gap: 36px;
+}
+
+.profile-content .profile-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.profile-content .profile-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16213a;
+  margin: 0 0 12px;
+}
+
+.profile-content .profile-text p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #5a6270;
+  margin: 0 0 14px;
+}
+
+.profile-content .feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-content .feature-list li {
+  font-size: 14px;
+  color: #5a6270;
+  padding: 6px 0 6px 22px;
+  position: relative;
+}
+
+.profile-content .feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c99a2e;
+}
+
+.profile-content .profile-image {
+  flex: 0 0 300px;
+}
+
+.profile-content .profile-image img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+.profile-image {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto 8px;
+  padding: 24px 48px;
+}
+ 
+.profile-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Malayalam detail card */
+.profile-details-wrap {
+  padding: 0 48px 44px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile-details-card {
+  background: #f7f7f5;
+  border-radius: 8px;
+  padding: 28px 32px;
+}
+
+.profile-details-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #16213a;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-details-body {
+  max-height: 180px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.4s ease;
+  padding: 0 5%;
+}
+
+.profile-details-body p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #7e8592;
+  margin: 0 0 10px;
+
+}
+
+.profile-details-body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 36px;
+  background: linear-gradient(180deg, rgba(247,247,245,0), #f7f7f5);
+  transition: opacity 0.3s ease;
+}
+
+.profile-details-body.expanded {
+  max-height: 1200px;
+}
+
+.profile-details-body.expanded::after {
+  opacity: 0;
+}
+
+.read-more-btn {
+  margin-top: 12px;
+  background: none;
+  border: 1px solid #c99a2e;
+  color: #8a6d1f;
+  padding: 9px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #c99a2e;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .profile-header { padding: 40px 24px 28px; }
+  .profile-header h1 { font-size: 26px; }
+  .profile-stats { padding: 24px; }
+  .profile-stats .stat { border-right: none; border-bottom: 1px solid #eee; padding: 16px 0; }
+  .profile-stats .stat:last-child { border-bottom: none; }
+  .profile-content { padding: 28px 24px; }
+  .profile-details-wrap { padding: 0 24px 28px; }
 }
