@@ -82,7 +82,7 @@
 
   <main class="pb-4">
     @yield('content')
-  </main><br>
+  </main>
 
   <!-- Start Footer Section -->
   <footer class="footer-section">
