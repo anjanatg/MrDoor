@@ -149,3 +149,52 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', onScroll);
     updateDoors();
 })();
+ const track = document.getElementById('track');
+  const bg = document.getElementById('bgLayer');
+  const dotsWrap = document.getElementById('dots');
+  const wrap = document.getElementById('sliderWrap');
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  const AUTO_DELAY = 3500;
+
+  let idx = 0;
+  let timer = null;
+
+  for (let i = 0; i < total; i++) {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => { idx = i; render(); resetTimer(); });
+    dotsWrap.appendChild(d);
+  }
+  const dotEls = dotsWrap.querySelectorAll('.dot');
+
+  function render() {
+    track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+    bg.style.transform = 'translateX(' + (-idx * 20) + 'px)';
+    dotEls.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+
+  function next() { idx = (idx + 1) % total; render(); }
+  function prev() { idx = (idx - 1 + total) % total; render(); }
+
+  function startTimer() { timer = setInterval(next, AUTO_DELAY); }
+  function resetTimer() { clearInterval(timer); startTimer(); }
+
+  document.getElementById('prevBtn').addEventListener('click', () => { prev(); resetTimer(); });
+  document.getElementById('nextBtn').addEventListener('click', () => { next(); resetTimer(); });
+
+  wrap.addEventListener('mouseenter', () => clearInterval(timer));
+  wrap.addEventListener('mouseleave', startTimer);
+
+  render();
+  startTimer();
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var body = document.getElementById('profileDetailsBody');
+    var btn = document.getElementById('profileReadMoreBtn');
+    if (!body || !btn) return;
+    btn.addEventListener('click', function () {
+        var isExpanded = body.classList.toggle('expanded');
+        btn.textContent = isExpanded ? 'Show Less' : 'Show More';
+    });
+});
